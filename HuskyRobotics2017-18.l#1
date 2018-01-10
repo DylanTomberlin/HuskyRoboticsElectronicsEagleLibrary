@@ -152,8 +152,8 @@
 <text x="-2.22" y="2.15" size="1.27" layer="27">&gt;Value</text>
 <text x="-2.46" y="-1.57" size="1.27" layer="25">&gt;Name</text>
 </package>
-<package name="SOIC3.9">
-<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 3.9mm SOIC device.  It was created for the Microchip MCP2561 CAN transciever.  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
+<package name="8SOIC3.9">
+<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 3.9mm SOIC device.  It was created for the Microchip MCP2561 CAN transciever, as well as the TI &lt;a href = "http://www.ti.com/lit/ds/symlink/tcan332.pdf"&gt;TCAN332.&lt;/a&gt;  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
 <wire x1="-3.175" y1="-1.5" x2="3.175" y2="-1.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="-1.5" x2="3.175" y2="1.5" width="0.127" layer="21"/>
 <wire x1="3.175" y1="1.5" x2="-3.175" y2="1.5" width="0.127" layer="21"/>
@@ -215,6 +215,110 @@
 <pad name="8" x="7.62" y="3.81" drill="0.6" shape="square"/>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="GULL8">
+<wire x1="-5" y1="2.75" x2="-5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.75" x2="5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.75" x2="5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="5" y1="2.75" x2="-5" y2="2.75" width="0.127" layer="21"/>
+<smd name="1" x="-3.81" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="2" x="-1.27" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="3" x="1.27" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="4" x="3.81" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="5" x="3.81" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="6" x="1.27" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="7" x="-1.27" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="8" x="-3.81" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="4SOJ-5.08MM">
+<description>&lt;b&gt;Description:&lt;/b&gt; 4 pin SOJ 5.08mm pitch surface mount package (j leads). &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source&lt;/a&gt;. Created for  EPSON SG-636PCE 32MHz external crystal oscillator. Part of the husky robotics team arm motor board 2017-2018.</description>
+<smd name="2" x="2.54" y="-2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="3" x="2.54" y="2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="4" x="-2.54" y="2.3" dx="1.3" dy="2.1" layer="1"/>
+<smd name="1" x="-2.54" y="-2.3" dx="1.3" dy="2.1" layer="1"/>
+<wire x1="-5" y1="4" x2="5" y2="4" width="0.127" layer="21"/>
+<wire x1="5" y1="4" x2="5" y2="-4" width="0.127" layer="21"/>
+<wire x1="5" y1="-4" x2="-5" y2="-4" width="0.127" layer="21"/>
+<wire x1="-5" y1="-4" x2="-5" y2="-1" width="0.127" layer="21"/>
+<wire x1="-5" y1="-1" x2="-4" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-4" y1="0" x2="-5" y2="1" width="0.127" layer="21" curve="90"/>
+<wire x1="-5" y1="1" x2="-5" y2="4" width="0.127" layer="21"/>
+<circle x="4" y="-3" radius="0.34234375" width="0.127" layer="21"/>
+<text x="-3" y="5" size="1.27" layer="25">&gt;Name</text>
+<text x="-3" y="-7" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="16SOIC3.9">
+<description>&lt;b&gt;Description:&lt;/b&gt; This footprint is a 16 pin 3.9mm SOIC device.  It was created for the &lt;a href = "http://www.ti.com/lit/ds/symlink/tlv2544.pdf"&gt;Texas Instruments TLV2544ID.&lt;/a&gt;  Foot print based on recommendation of datasheet.  Part of Husky Robotics 2017-2018 arm motor boards.</description>
+<wire x1="-5.08" y1="-1.5" x2="5.08" y2="-1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-1.5" x2="5.08" y2="1.5" width="0.127" layer="21"/>
+<wire x1="5.08" y1="1.5" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
+<smd name="3" x="-1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="4" x="-0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="5" x="0.635" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="6" x="1.905" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="11" x="1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="12" x="0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="13" x="-0.635" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="14" x="-1.905" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<wire x1="-5.08" y1="-1.5" x2="-5.08" y2="-0.635" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-0.635" x2="-4.445" y2="0" width="0.127" layer="21" curve="90"/>
+<wire x1="-4.445" y1="0" x2="-5.08" y2="0.635" width="0.127" layer="21" curve="90"/>
+<wire x1="-5.08" y1="0.635" x2="-5.08" y2="1.5" width="0.127" layer="21"/>
+<text x="5.08" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="5.08" y="-1.27" size="1.27" layer="27">&gt;Value</text>
+<smd name="15" x="-3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="16" x="-4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="10" x="3.175" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="9" x="4.445" y="2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="7" x="3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="8" x="4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="2" x="-3.175" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+<smd name="1" x="-4.445" y="-2.7" dx="0.6" dy="1.55" layer="1"/>
+</package>
+<package name="TSSOP14">
+<description>&lt;b&gt;Thin Shrink Small Outline Plastic 14&lt;/b&gt;&lt;p&gt;
+MAX3223-MAX3243.pdf</description>
+<wire x1="-2.5146" y1="-2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.2828" x2="2.5146" y2="-2.2828" width="0.1524" layer="21"/>
+<wire x1="2.5146" y1="2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
+<wire x1="-2.5146" y1="-2.2828" x2="-2.5146" y2="2.2828" width="0.1524" layer="21"/>
+<wire x1="-2.286" y1="-2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
+<wire x1="2.286" y1="2.0542" x2="2.286" y2="-2.0542" width="0.0508" layer="21"/>
+<wire x1="2.286" y1="2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
+<wire x1="-2.286" y1="-2.0542" x2="-2.286" y2="2.0542" width="0.0508" layer="21"/>
+<circle x="-1.6256" y="-1.2192" radius="0.4572" width="0.1524" layer="21"/>
+<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="11" x="0" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<text x="-2.8956" y="-2.0828" size="1.016" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.8862" y="-2.0828" size="1.016" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.0516" y1="-3.121" x2="-1.8484" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.4016" y1="-3.121" x2="-1.1984" y2="-2.2828" layer="51"/>
+<rectangle x1="-0.7516" y1="-3.121" x2="-0.5484" y2="-2.2828" layer="51"/>
+<rectangle x1="-0.1016" y1="-3.121" x2="0.1016" y2="-2.2828" layer="51"/>
+<rectangle x1="0.5484" y1="-3.121" x2="0.7516" y2="-2.2828" layer="51"/>
+<rectangle x1="1.1984" y1="-3.121" x2="1.4016" y2="-2.2828" layer="51"/>
+<rectangle x1="1.8484" y1="-3.121" x2="2.0516" y2="-2.2828" layer="51"/>
+<rectangle x1="1.8484" y1="2.2828" x2="2.0516" y2="3.121" layer="51"/>
+<rectangle x1="1.1984" y1="2.2828" x2="1.4016" y2="3.121" layer="51"/>
+<rectangle x1="0.5484" y1="2.2828" x2="0.7516" y2="3.121" layer="51"/>
+<rectangle x1="-0.1016" y1="2.2828" x2="0.1016" y2="3.121" layer="51"/>
+<rectangle x1="-0.7516" y1="2.2828" x2="-0.5484" y2="3.121" layer="51"/>
+<rectangle x1="-1.4016" y1="2.2828" x2="-1.1984" y2="3.121" layer="51"/>
+<rectangle x1="-2.0516" y1="2.2828" x2="-1.8484" y2="3.121" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -326,6 +430,73 @@
 <pin name="FUNCTION" x="-17.78" y="-2.54" visible="pin" length="middle"/>
 <pin name="VDD" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
 <pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="TCAN332">
+<description>&lt;b&gt;Description:&lt;/b&gt; This schematic is for the Microchip MCP2561 CAN transciever.  Created for the UW husky robotics team 2017-2018 as part of the arm motor board.  &lt;b&gt;It has not be tested.&lt;/b&gt;</description>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="TXD" x="-12.7" y="10.16" visible="pin" length="middle" direction="out"/>
+<pin name="RXD" x="-12.7" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="CANL" x="-12.7" y="-5.08" length="middle"/>
+<pin name="CANH" x="-12.7" y="-10.16" length="middle"/>
+<pin name="GND" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="SW4">
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="1A" x="-12.7" y="7.62" length="middle"/>
+<pin name="2A" x="-12.7" y="2.54" length="middle"/>
+<pin name="3A" x="-12.7" y="-2.54" length="middle"/>
+<pin name="4A" x="-12.7" y="-7.62" length="middle"/>
+<pin name="4B" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="3B" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="2B" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="1B" x="12.7" y="7.62" length="middle" rot="R180"/>
+<text x="-5.08" y="12.7" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt;  EPSON SG-636PCE 32 MHz crystal oscillator pinout, 3.3V supply.  Created for Husky Robotics team 2017-2018, part of the arm motor board. &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source.&lt;/a&gt;
+"</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUTPUT" x="-17.78" y="2.54" visible="pin" length="middle" direction="out"/>
+<pin name="OUT_EN" x="-17.78" y="-2.54" visible="pin" length="middle" direction="in"/>
+<pin name="VCC" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="ADC_TLV2544ID">
+<wire x1="-10.16" y1="17.78" x2="10.16" y2="17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="-10.16" y2="-17.78" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-17.78" x2="-10.16" y2="17.78" width="0.254" layer="94"/>
+<pin name="A0" x="-15.24" y="12.7" length="middle"/>
+<pin name="A1" x="-15.24" y="10.16" length="middle"/>
+<pin name="A2" x="-15.24" y="7.62" length="middle"/>
+<pin name="A3" x="-15.24" y="5.08" length="middle"/>
+<pin name="VCC" x="-15.24" y="-2.54" length="middle"/>
+<pin name="GND" x="-15.24" y="-5.08" length="middle"/>
+<pin name="SCLK" x="15.24" y="15.24" length="middle" rot="R180"/>
+<pin name="SDI" x="15.24" y="12.7" length="middle" rot="R180"/>
+<pin name="SDO" x="15.24" y="10.16" length="middle" rot="R180"/>
+<pin name="EOC/!INT" x="15.24" y="7.62" length="middle" rot="R180"/>
+<pin name="!CS" x="15.24" y="2.54" length="middle" rot="R180"/>
+<pin name="!CSTART" x="15.24" y="0" length="middle" rot="R180"/>
+<pin name="FS" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<pin name="!PWDN" x="15.24" y="-5.08" length="middle" rot="R180"/>
+<pin name="REFP" x="-15.24" y="-12.7" length="middle"/>
+<pin name="REFM" x="-15.24" y="-10.16" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -421,7 +592,7 @@
 <gate name="G$1" symbol="MCP2561" x="2.54" y="7.62"/>
 </gates>
 <devices>
-<device name="SOIC" package="SOIC3.9">
+<device name="SOIC" package="8SOIC3.9">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -468,6 +639,97 @@
 <connect gate="G$1" pin="GND" pad="7"/>
 <connect gate="G$1" pin="OUTPUT" pad="8"/>
 <connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCAN332">
+<gates>
+<gate name="G$1" symbol="TCAN332" x="-12.7" y="5.08"/>
+</gates>
+<devices>
+<device name="TCAN332" package="8SOIC3.9">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD4SW">
+<gates>
+<gate name="G$1" symbol="SW4" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="SMD4SW" package="GULL8">
+<connects>
+<connect gate="G$1" pin="1A" pad="1"/>
+<connect gate="G$1" pin="1B" pad="8"/>
+<connect gate="G$1" pin="2A" pad="2"/>
+<connect gate="G$1" pin="2B" pad="7"/>
+<connect gate="G$1" pin="3A" pad="3"/>
+<connect gate="G$1" pin="3B" pad="6"/>
+<connect gate="G$1" pin="4A" pad="4"/>
+<connect gate="G$1" pin="4B" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt; 32MHz EPSON SG-646PCE crystal oscillator. &lt;a href="https://support.epson.biz/td/api/doc_check.php?dl=brief_SG-636PCE_en.pdf"&gt; Source.&lt;/a&gt; Created for the husky robotics team 2017-2018, arm motor board.</description>
+<gates>
+<gate name="G$1" symbol="ESPSON_SG-646PCE_CRYSTAL_OSCILLATOR" x="-20.32" y="2.54"/>
+</gates>
+<devices>
+<device name="EPSON_SG-646PCE_32MHZ" package="4SOJ-5.08MM">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUTPUT" pad="3"/>
+<connect gate="G$1" pin="OUT_EN" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ADC_TLV2544ID">
+<gates>
+<gate name="G$1" symbol="ADC_TLV2544ID" x="-10.16" y="5.08"/>
+</gates>
+<devices>
+<device name="TI_ADC_TLV2544ID" package="16SOIC3.9">
+<connects>
+<connect gate="G$1" pin="!CS" pad="15"/>
+<connect gate="G$1" pin="!CSTART" pad="10"/>
+<connect gate="G$1" pin="!PWDN" pad="12"/>
+<connect gate="G$1" pin="A0" pad="6"/>
+<connect gate="G$1" pin="A1" pad="7"/>
+<connect gate="G$1" pin="A2" pad="8"/>
+<connect gate="G$1" pin="A3" pad="9"/>
+<connect gate="G$1" pin="EOC/!INT" pad="4"/>
+<connect gate="G$1" pin="FS" pad="13"/>
+<connect gate="G$1" pin="GND" pad="11"/>
+<connect gate="G$1" pin="REFM" pad="14"/>
+<connect gate="G$1" pin="REFP" pad="16"/>
+<connect gate="G$1" pin="SCLK" pad="3"/>
+<connect gate="G$1" pin="SDI" pad="2"/>
+<connect gate="G$1" pin="SDO" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>

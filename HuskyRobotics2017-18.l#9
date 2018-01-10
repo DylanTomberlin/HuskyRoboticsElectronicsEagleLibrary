@@ -174,15 +174,63 @@
 </package>
 <package name="3SIP">
 <description>&lt;b&gt;Description: &lt;/b&gt;This footprint is for Murata Power Solutions OKI-78SR DC-DC power regulator modulator.  It has an outline for the horizontal mount configuration.  Based on recommended pad positions on datasheet.</description>
-<pad name="P$1" x="2.54" y="0" drill="0.6" shape="square"/>
-<pad name="P$2" x="0" y="0" drill="0.6" shape="square"/>
-<pad name="P$3" x="-2.54" y="0" drill="0.6" shape="square"/>
+<pad name="1" x="2.54" y="0" drill="0.6" shape="square"/>
+<pad name="2" x="0" y="0" drill="0.6" shape="square"/>
+<pad name="3" x="-2.54" y="0" drill="0.6" shape="square"/>
 <wire x1="-5.461" y1="-1.524" x2="5.461" y2="-1.524" width="0.127" layer="21"/>
 <wire x1="5.461" y1="-1.524" x2="5.461" y2="15.494" width="0.127" layer="21"/>
 <wire x1="5.461" y1="15.494" x2="-5.461" y2="15.494" width="0.127" layer="21"/>
 <wire x1="-5.461" y1="15.494" x2="-5.461" y2="-1.524" width="0.127" layer="21"/>
 <text x="-2.54" y="11.43" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="7.62" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="FULL_CAN">
+<description>&lt;b&gt;Description:&lt;/b&gt; This is a generic layout for a Full Can package.
+&lt;p&gt;
+	&lt;b&gt;Issues to address:&lt;/b&gt;
+	&lt;ul&gt;
+		&lt;li&gt;These pads seem to be on the top, but shouldn't they be on the bottom?
+		&lt;li&gt;Hole diameter needs to be checked
+		&lt;li&gt;Double check overall units. I was assuming inches, but the data sheet I was referencing didn't specify units.
+	&lt;/ul&gt;
+&lt;/p&gt;</description>
+<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="51"/>
+<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="51"/>
+<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="51" curve="90"/>
+<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="51" curve="90"/>
+<wire x1="-10.16" y1="-6.35" x2="8.89" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.127" layer="21"/>
+<wire x1="8.89" y1="6.35" x2="-8.89" y2="6.35" width="0.127" layer="21"/>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-6.35" width="0.127" layer="21"/>
+<wire x1="-8.89" y1="6.35" x2="-10.16" y2="5.08" width="0.127" layer="21" curve="90"/>
+<wire x1="10.16" y1="5.08" x2="8.89" y2="6.35" width="0.127" layer="21" curve="90"/>
+<wire x1="8.89" y1="-6.35" x2="10.16" y2="-5.08" width="0.127" layer="21" curve="90"/>
+<circle x="-8.89" y="-5.08" radius="0.635" width="0.127" layer="21"/>
+<pad name="14" x="-7.62" y="3.81" drill="0.6" shape="square"/>
+<pad name="1" x="-7.62" y="-3.81" drill="0.6" shape="square"/>
+<pad name="7" x="7.62" y="-3.81" drill="0.6" shape="square"/>
+<pad name="8" x="7.62" y="3.81" drill="0.6" shape="square"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
+</package>
+<package name="GULL8">
+<wire x1="-5" y1="2.75" x2="-5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="-5" y1="-2.75" x2="5" y2="-2.75" width="0.127" layer="21"/>
+<wire x1="5" y1="-2.75" x2="5" y2="2.75" width="0.127" layer="21"/>
+<wire x1="5" y1="2.75" x2="-5" y2="2.75" width="0.127" layer="21"/>
+<smd name="1" x="-3.81" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="2" x="-1.27" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="3" x="1.27" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="4" x="3.81" y="-4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="5" x="3.81" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="6" x="1.27" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="7" x="-1.27" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<smd name="8" x="-3.81" y="4.3" dx="1.13" dy="2.44" layer="1"/>
+<text x="-3.81" y="1.27" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.81" y="-2.54" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -279,10 +327,52 @@
 <wire x1="2.54" y1="20.32" x2="-12.7" y2="20.32" width="0.254" layer="94"/>
 <wire x1="-12.7" y1="20.32" x2="-12.7" y2="-2.54" width="0.254" layer="94"/>
 <pin name="INPUT+" x="-10.16" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="OUTPUT+" x="-5.08" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
-<pin name="GND" x="0" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="OUTPUT+" x="0" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND" x="-5.08" y="-7.62" visible="pin" length="middle" direction="pwr" rot="R90"/>
 <text x="-12.7" y="25.4" size="1.778" layer="95">&gt;Name</text>
 <text x="-12.7" y="22.86" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="GENERIC_CRYSTAL_OSCILLATOR">
+<description>&lt;b&gt;Description:&lt;/b&gt; Generic crystal oscillator pinout, with some having a special function pin, others having not connection on that pin.  Created for Husky Robotics team 2017-2018, part of the arm motor board.</description>
+<wire x1="-12.7" y1="5.08" x2="-12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-5.08" x2="12.7" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-5.08" x2="12.7" y2="5.08" width="0.254" layer="94"/>
+<wire x1="12.7" y1="5.08" x2="-12.7" y2="5.08" width="0.254" layer="94"/>
+<pin name="OUTPUT" x="-17.78" y="2.54" visible="pin" length="middle" direction="out"/>
+<pin name="FUNCTION" x="-17.78" y="-2.54" visible="pin" length="middle"/>
+<pin name="VDD" x="17.78" y="2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="17.78" y="-2.54" visible="pin" length="middle" direction="pwr" rot="R180"/>
+<text x="-5.08" y="7.62" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-10.16" size="1.778" layer="96">&gt;Value</text>
+</symbol>
+<symbol name="TCAN332">
+<description>&lt;b&gt;Description:&lt;/b&gt; This schematic is for the Microchip MCP2561 CAN transciever.  Created for the UW husky robotics team 2017-2018 as part of the arm motor board.  &lt;b&gt;It has not be tested.&lt;/b&gt;</description>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
+<pin name="TXD" x="-12.7" y="10.16" visible="pin" length="middle" direction="out"/>
+<pin name="RXD" x="-12.7" y="5.08" visible="pin" length="middle" direction="in"/>
+<pin name="CANL" x="-12.7" y="-5.08" length="middle"/>
+<pin name="CANH" x="-12.7" y="-10.16" length="middle"/>
+<pin name="GND" x="12.7" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="0" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="SW4">
+<wire x1="-7.62" y1="-10.16" x2="7.62" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-10.16" x2="7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
+<pin name="1A" x="-12.7" y="7.62" length="middle"/>
+<pin name="2A" x="-12.7" y="2.54" length="middle"/>
+<pin name="3A" x="-12.7" y="-2.54" length="middle"/>
+<pin name="4A" x="-12.7" y="-7.62" length="middle"/>
+<pin name="4B" x="12.7" y="-7.62" length="middle" rot="R180"/>
+<pin name="3B" x="12.7" y="-2.54" length="middle" rot="R180"/>
+<pin name="2B" x="12.7" y="2.54" length="middle" rot="R180"/>
+<pin name="1B" x="12.7" y="7.62" length="middle" rot="R180"/>
+<text x="-5.08" y="12.7" size="1.778" layer="95">&gt;Name</text>
+<text x="-5.08" y="-15.24" size="1.778" layer="96">&gt;Value</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -402,6 +492,72 @@
 </gates>
 <devices>
 <device name="3SIP" package="3SIP">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="INPUT+" pad="1"/>
+<connect gate="G$1" pin="OUTPUT+" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GENERIC_OSCILLATOR">
+<description>&lt;b&gt;Description: &lt;/b&gt; A generic full can oscillator based on Abracon full dip crystal oscillators.  Created for the husky robotics team 2017-2018, part of the arm motor board.</description>
+<gates>
+<gate name="G$1" symbol="GENERIC_CRYSTAL_OSCILLATOR" x="-12.7" y="10.16"/>
+</gates>
+<devices>
+<device name="GENERIC_FULL_CAN_OSCILLATOR" package="FULL_CAN">
+<connects>
+<connect gate="G$1" pin="FUNCTION" pad="1"/>
+<connect gate="G$1" pin="GND" pad="7"/>
+<connect gate="G$1" pin="OUTPUT" pad="8"/>
+<connect gate="G$1" pin="VDD" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TCAN332">
+<gates>
+<gate name="G$1" symbol="TCAN332" x="-12.7" y="5.08"/>
+</gates>
+<devices>
+<device name="TCAN332" package="SOIC3.9">
+<connects>
+<connect gate="G$1" pin="CANH" pad="7"/>
+<connect gate="G$1" pin="CANL" pad="6"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="RXD" pad="4"/>
+<connect gate="G$1" pin="TXD" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMD4SW">
+<gates>
+<gate name="G$1" symbol="SW4" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="SMD4SW" package="GULL8">
+<connects>
+<connect gate="G$1" pin="1A" pad="1"/>
+<connect gate="G$1" pin="1B" pad="8"/>
+<connect gate="G$1" pin="2A" pad="2"/>
+<connect gate="G$1" pin="2B" pad="7"/>
+<connect gate="G$1" pin="3A" pad="3"/>
+<connect gate="G$1" pin="3B" pad="6"/>
+<connect gate="G$1" pin="4A" pad="4"/>
+<connect gate="G$1" pin="4B" pad="5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
