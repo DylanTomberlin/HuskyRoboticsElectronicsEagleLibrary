@@ -413,7 +413,7 @@ MAX3223-MAX3243.pdf</description>
 <pad name="1" x="-6.35" y="0" drill="0.79501875" shape="square"/>
 <pad name="4" x="1.27" y="0" drill="0.79501875" shape="square"/>
 <pad name="5" x="3.81" y="0" drill="0.79501875" shape="square"/>
-<pad name="P$6" x="6.35" y="0" drill="0.79501875" shape="square"/>
+<pad name="6" x="6.35" y="0" drill="0.79501875" shape="square"/>
 <wire x1="-8.89" y1="1.27" x2="8.89" y2="1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="1.27" x2="8.89" y2="-1.27" width="0.127" layer="21"/>
 <wire x1="8.89" y1="-1.27" x2="-8.89" y2="-1.27" width="0.127" layer="21"/>
@@ -421,6 +421,31 @@ MAX3223-MAX3243.pdf</description>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
 <text x="-2.54" y="-5.08" size="1.27" layer="27">&gt;Value</text>
 <circle x="-8.255" y="0.635" radius="0.3175" width="0.127" layer="27"/>
+</package>
+<package name="2SIP_HEADER">
+<pad name="1" x="-1.27" y="0" drill="0.79501875" shape="square"/>
+<pad name="2" x="1.27" y="0" drill="0.79501875" shape="square"/>
+<wire x1="-3.175" y1="1.27" x2="3.175" y2="1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="-3.175" y2="-1.27" width="0.127" layer="21"/>
+<wire x1="-3.175" y1="-1.27" x2="-3.175" y2="1.27" width="0.127" layer="21"/>
+<text x="-2.54" y="2.54" size="1.27" layer="25">&gt;Name</text>
+<text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;Value</text>
+<circle x="-2.667" y="0.762" radius="0.3175" width="0.127" layer="27"/>
+</package>
+<package name="PUSH_BUTTON">
+<description>&lt;b&gt;Description:&lt;/b&gt; Generic push button.  A1 and A2 are always connected, as are B1 &amp; B2.  All 4 are connected when button is pressed.</description>
+<pad name="A1" x="-3.81" y="2.54" drill="1.191259375" shape="square"/>
+<pad name="A2" x="3.81" y="2.54" drill="1.191259375" shape="square"/>
+<pad name="B1" x="-3.81" y="-2.54" drill="1.191259375" shape="square"/>
+<pad name="B2" x="3.81" y="-2.54" drill="1.191259375" shape="square"/>
+<wire x1="-5.08" y1="3.81" x2="5.08" y2="3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="3.81" x2="5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="5.08" y1="-3.81" x2="-5.08" y2="-3.81" width="0.127" layer="21"/>
+<wire x1="-5.08" y1="-3.81" x2="-5.08" y2="3.81" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="1.905" width="0.127" layer="21"/>
+<text x="-3.175" y="4.445" size="1.27" layer="25">&gt;Name</text>
+<text x="-3.175" y="-5.715" size="1.27" layer="27">&gt;Value</text>
 </package>
 </packages>
 <symbols>
@@ -662,8 +687,8 @@ MAX3223-MAX3243.pdf</description>
 <description>Generic 2 pin connector out</description>
 <pin name="2" x="7.62" y="-2.54" visible="pin" length="middle" rot="R180"/>
 <pin name="1" x="7.62" y="2.54" visible="pin" length="middle" rot="R180"/>
-<text x="-12.192" y="1.778" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.192" y="-3.302" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="1.778" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="-3.302" size="1.778" layer="95">&gt;Name</text>
 <text x="-5.08" y="-7.62" size="1.778" layer="96">&gt;Value</text>
 <rectangle x1="1.905" y1="1.905" x2="4.445" y2="3.175" layer="94"/>
 <rectangle x1="1.905" y1="-3.175" x2="4.445" y2="-1.905" layer="94"/>
@@ -677,11 +702,11 @@ MAX3223-MAX3243.pdf</description>
 <pin name="2" x="7.62" y="7.62" visible="pin" length="middle" rot="R180"/>
 <pin name="1" x="7.62" y="12.7" visible="pin" length="middle" rot="R180"/>
 <pin name="5" x="7.62" y="-7.62" visible="pin" length="middle" rot="R180"/>
-<text x="-12.192" y="11.938" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.192" y="6.858" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.192" y="1.778" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.192" y="-3.302" size="1.778" layer="95">&gt;Name</text>
-<text x="-12.192" y="-8.382" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="11.938" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="6.858" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="1.778" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="-3.302" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="-8.382" size="1.778" layer="95">&gt;Name</text>
 <text x="-5.08" y="-17.78" size="1.778" layer="96">&gt;Value</text>
 <rectangle x1="2.413" y1="12.065" x2="4.953" y2="13.335" layer="94"/>
 <circle x="2.54" y="12.7" radius="0.508" width="0.254" layer="94"/>
@@ -694,9 +719,29 @@ MAX3223-MAX3243.pdf</description>
 <rectangle x1="2.413" y1="-8.255" x2="4.953" y2="-6.985" layer="94"/>
 <circle x="2.54" y="-7.62" radius="0.508" width="0.254" layer="94"/>
 <pin name="6" x="7.62" y="-12.7" visible="pin" length="middle" rot="R180"/>
-<text x="-12.192" y="-13.462" size="1.778" layer="95">&gt;Name</text>
+<text x="-19.812" y="-13.462" size="1.778" layer="95">&gt;Name</text>
 <rectangle x1="2.413" y1="-13.335" x2="4.953" y2="-12.065" layer="94"/>
 <circle x="2.54" y="-12.7" radius="0.508" width="0.254" layer="94"/>
+</symbol>
+<symbol name="PUSH_BUTTON">
+<wire x1="0" y1="-3.175" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="3.175" width="0.254" layer="94"/>
+<wire x1="0" y1="-2.54" x2="-0.635" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-5.08" y2="1.905" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="1.905" x2="-6.35" y2="0" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.905" x2="-5.08" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-4.445" y2="0" width="0.1524" layer="94"/>
+<wire x1="-6.35" y1="0" x2="-6.35" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<text x="-4.445" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<text x="-6.985" y="-1.905" size="1.778" layer="95" rot="R90">&gt;PART</text>
+<pin name="P" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="pad" length="short" direction="pas" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1031,7 +1076,7 @@ MAX3223-MAX3243.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="6BASIC_HEADER">
+<deviceset name="6BASIC_HEADER" prefix="BASIC_HEADER">
 <gates>
 <gate name="G$1" symbol="6PIN" x="2.54" y="0"/>
 </gates>
@@ -1043,7 +1088,39 @@ MAX3223-MAX3243.pdf</description>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="P$6"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2BASIC_HEADER" prefix="BASIC_HEADER">
+<gates>
+<gate name="G$1" symbol="2PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2SIP_HEADER">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PUSH_BUTTON">
+<gates>
+<gate name="G$1" symbol="PUSH_BUTTON" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="PUSH_BUTTON">
+<connects>
+<connect gate="G$1" pin="P" pad="A1 A2"/>
+<connect gate="G$1" pin="S" pad="B1 B2"/>
 </connects>
 <technologies>
 <technology name=""/>
