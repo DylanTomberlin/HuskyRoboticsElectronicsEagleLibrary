@@ -529,6 +529,50 @@ MAX3223-MAX3243.pdf</description>
 <pad name="77" x="15.24" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
 <pad name="78" x="15.24" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
 </package>
+<package name="OOPS_SPACE_SMALL">
+<pad name="3" x="-7.62" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="2" x="-7.62" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="1" x="-7.62" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="4" x="-7.62" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="5" x="-7.62" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="6" x="-7.62" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="7" x="-5.08" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="8" x="-5.08" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="9" x="-5.08" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="10" x="-5.08" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="11" x="-5.08" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="12" x="-5.08" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="13" x="-2.54" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="14" x="-2.54" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="15" x="-2.54" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="16" x="-2.54" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="17" x="-2.54" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="18" x="-2.54" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="19" x="0" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="20" x="0" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="21" x="0" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="22" x="0" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="23" x="0" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="24" x="0" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="25" x="2.54" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="26" x="2.54" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="27" x="2.54" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="28" x="2.54" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="29" x="2.54" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="30" x="2.54" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="31" x="5.08" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="32" x="5.08" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="33" x="5.08" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="34" x="5.08" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="35" x="5.08" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="36" x="5.08" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="37" x="7.62" y="-1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="38" x="7.62" y="-3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="39" x="7.62" y="-6.35" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="40" x="7.62" y="1.27" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="41" x="7.62" y="3.81" drill="0.79501875" shape="square" rot="R90"/>
+<pad name="42" x="7.62" y="6.35" drill="0.79501875" shape="square" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CY8C4247AZI-L485">
@@ -840,9 +884,9 @@ MAX3223-MAX3243.pdf</description>
 <pin name="3V3-2" x="-30.48" y="0" length="middle"/>
 <pin name="3V3-1" x="-30.48" y="5.08" length="middle"/>
 <pin name="3V3-3" x="-30.48" y="-5.08" length="middle"/>
-<pin name="5V-1" x="27.94" y="5.08" length="middle" rot="R180"/>
-<pin name="5V-2" x="27.94" y="0" length="middle" rot="R180"/>
-<pin name="5V-3" x="27.94" y="-5.08" length="middle" rot="R180"/>
+<pin name="5V-1" x="30.48" y="5.08" length="middle" rot="R180"/>
+<pin name="5V-2" x="30.48" y="0" length="middle" rot="R180"/>
+<pin name="5V-3" x="30.48" y="-5.08" length="middle" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -1235,6 +1279,20 @@ MAX3223-MAX3243.pdf</description>
 </gates>
 <devices>
 <device name="" package="OOPS_SPACE">
+<connects>
+<connect gate="G$1" pin="3V3-1" pad="73"/>
+<connect gate="G$1" pin="3V3-2" pad="74"/>
+<connect gate="G$1" pin="3V3-3" pad="75"/>
+<connect gate="G$1" pin="5V-1" pad="1"/>
+<connect gate="G$1" pin="5V-2" pad="2"/>
+<connect gate="G$1" pin="5V-3" pad="3"/>
+<connect gate="G$1" pin="GND-1" pad="4"/>
+<connect gate="G$1" pin="GND-2" pad="5"/>
+<connect gate="G$1" pin="GND-3" pad="6"/>
+<connect gate="G$1" pin="GND-4" pad="76"/>
+<connect gate="G$1" pin="GND-5" pad="77"/>
+<connect gate="G$1" pin="GND-6" pad="78"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
